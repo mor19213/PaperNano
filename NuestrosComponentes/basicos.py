@@ -17,9 +17,16 @@ class MyTransistor(DloGen):
         self.layer = params['layer']
     
     def genLayout(self):
-        # generate rectangle layout
-        x = self.width
-        y = self.height
-        Rect(Layer('nwell'), Box(-x, 0, x, y))
-        Rect(Layer('nimp'), Box(-x, -y, x, 0))
-        Rect(Layer('pimp'), Box(-x, -y, x, -y-y/4))
+        y = 0.628
+        w = 0.862
+        m1 = 0.1
+        Rect(Layer('nwell'), Box(-0.064, 0, w+0.064, 1.094))
+
+        Rect(Layer('nimp'), Box(0, y, w, y+m1))
+        Rect(Layer('pimp'), Box(0, 0, w, 0.942))
+
+        Rect(Layer('nimp'), Box(0, -y, w, 0))
+
+        Rect(Layer('metal1'), Box(0, -y-0.02, w, -y-0.081))
+        Rect(Layer('diff'), Box(0, -y-0.02, w, -y-0.082))
+        Rect(Layer('pimp'), Box(0, -y, w, -y-m1))
