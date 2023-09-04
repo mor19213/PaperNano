@@ -1,7 +1,7 @@
 __version__ = "$Revision: #3 $"
 from cni.dlo import *
 
-class MyTransistor(DloGen):
+class MyNotGate(DloGen):
 
     @classmethod
     def defineParamSpecs(cls, specs):
