@@ -1,3 +1,4 @@
 /.cnitools
 /synopsys_custom
 **/*.pyc
+GeneratedLib/*

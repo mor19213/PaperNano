@@ -11,11 +11,11 @@ fi
 
 cd $workdir
 export CNI_ROOT=/usr/synopsys/customcompiler/U-2023.03/linux64/PyCellStudio
-rm -rf ~/GeneratedLib/
-rm -rf ~/$libreria
-cp -r $libreria ~
+rm -rf ./GeneratedLib/
+#rm -rf ~/$libreria
+#cp -r $libreria ~
 #cngenlib --create --view --techfile $CNI_ROOT/tech/cni130/santanaTech/Santana.tech pkg:$libreria GeneratedLib ~/GeneratedLib
-cngenlib --create --view --techfile /usr/synopsys/iPDK/SAED32nm_PDK_04152022/SAED_PDK_32_28/Santana.tech pkg:$libreria GeneratedLib ~/GeneratedLib
+cngenlib --create --view --techfile /usr/synopsys/iPDK/SAED32nm_PDK_04152022/SAED_PDK_32_28/Santana.tech pkg:$libreria GeneratedLib ./GeneratedLib
 
 wait
 custom_compiler
