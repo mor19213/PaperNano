@@ -1,0 +1,230 @@
+{
+    "NWELL": {
+        "map": 1
+    },
+    "DIFF": {
+        "map": 3
+    },
+    "DIFF_18": {
+        "map": 6
+    },
+    "DIFF_25": {
+        "map": 75
+    },
+    "PIMP": {
+        "map": 4
+    },
+    "NIMP": {
+        "map": 5
+    },
+    "PO": {
+        "map": 10
+    },
+    "RMARK": {
+        "map": 49
+    },
+    "CO": {
+        "map": 28
+    },
+    "M1": {
+        "map": 11
+    },
+    "VIA1": {
+        "map": 12
+    },
+    "M2": {
+        "map": 13
+    },
+    "VIA2": {
+        "map": 14
+    },
+    "M3": {
+        "map": 15
+    },
+    "VIA3": {
+        "map": 16
+    },
+    "M4": {
+        "map": 17
+    },
+    "VIA4": {
+        "map": 18
+    },
+    "M5": {
+        "map": 19
+    },
+    "VIA5": {
+        "map": 20
+    },
+    "M6": {
+        "map": 21
+    },
+    "VIA6": {
+        "map": 22
+    },
+    "M7": {
+        "map": 23
+    },
+    "DIOD": {
+        "map": 46
+    },
+    "HVTIMP": {
+        "map": 29
+    },
+    "LVTIMP": {
+        "map": 30
+    },
+    "SBLK": {
+        "map": 9
+    },
+    "CBMMARK": {
+        "map": 71
+    },
+    "BJTMY": {
+        "map": 47
+    },
+    "CTMMARK": {
+        "map": 73
+    },
+    "METDMY": {
+        "map": 74
+    },
+    "flightLine": {
+        "map": 100
+    },
+    "bbox": {
+        "map": 177
+    },
+    "Unrouted": {
+        "map": 200
+    },
+    "Row": {
+        "map": 201
+    },
+    "Group": {
+        "map": 202
+    },
+    "Cannotoccupy": {
+        "map": 203
+    },
+    "Canplace": {
+        "map": 204
+    },
+    "hardFence": {
+        "map": 205
+    },
+    "softFence": {
+        "map": 206
+    },
+    "y0": {
+        "map": 207
+    },
+    "y1": {
+        "map": 208
+    },
+    "y2": {
+        "map": 209
+    },
+    "y3": {
+        "map": 210
+    },
+    "y4": {
+        "map": 211
+    },
+    "y5": {
+        "map": 212
+    },
+    "y6": {
+        "map": 213
+    },
+    "y7": {
+        "map": 214
+    },
+    "y8": {
+        "map": 215
+    },
+    "y9": {
+        "map": 216
+    },
+    "designFlow": {
+        "map": 217
+    },
+    "stretch": {
+        "map": 218
+    },
+    "edgeLayer": {
+        "map": 219
+    },
+    "changedLayer": {
+        "map": 220
+    },
+    "unset": {
+        "map": 221
+    },
+    "unknown": {
+        "map": 222
+    },
+    "spike": {
+        "map": 223
+    },
+    "hiz": {
+        "map": 224
+    },
+    "resist": {
+        "map": 225
+    },
+    "drive": {
+        "map": 226
+    },
+    "supply": {
+        "map": 227
+    },
+    "wire": {
+        "map": 228
+    },
+    "pin": {
+        "map": 229
+    },
+    "text": {
+        "map": 230
+    },
+    "device": {
+        "map": 231
+    },
+    "border": {
+        "map": 232
+    },
+    "snap": {
+        "map": 233
+    },
+    "align": {
+        "map": 234
+    },
+    "prBoundary": {
+        "map": 235
+    },
+    "instance": {
+        "map": 236
+    },
+    "annotate": {
+        "map": 237
+    },
+    "marker": {
+        "map": 238
+    },
+    "select": {
+        "map": 239
+    },
+    "grid": {
+        "map": 251
+    },
+    "axis": {
+        "map": 252
+    },
+    "hilite": {
+        "map": 253
+    },
+    "background": {
+        "map": 254
+    }
+  }

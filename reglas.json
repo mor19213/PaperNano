@@ -1,0 +1,290 @@
+{
+    "NWELL": {
+        "map": 1,
+        "maskNumbers": 1,
+        "layerMaterials": "nWell"
+    },
+    "DIFF": {
+        "map": 3,
+        "maskNumbers": 2,
+        "layerMaterials": "diffusion"
+    },
+    "DIFF_18": {
+        "map": 6,
+        "maskNumbers": 3,
+        "layerMaterials": "recognition"
+    },
+    "DIFF_25": {
+        "map": 75,
+        "maskNumbers": 75,
+        "layerMaterials": "recognition"
+    },
+    "PIMP": {
+        "map": 4,
+        "maskNumbers": 4,
+        "layerMaterials": "pImplant"
+    },
+    "NIMP": {
+        "map": 5,
+        "maskNumbers": 5,
+        "layerMaterials": "nImplant"
+    },
+    "PO": {
+        "map": 10,
+        "maskNumbers": 53,
+        "layerMaterials": "poly"
+    },
+    "RMARK": {
+        "map": 49,
+        "maskNumbers": 65,
+        "layerMaterials": "other"
+    },
+    "CO": {
+        "map": 28,
+        "maskNumbers": 23,
+        "layerMaterials": "cut"
+    },
+    "M1": {
+        "map": 11,
+        "maskNumbers": 6,
+        "layerMaterials": "metal"
+    },
+    "VIA1": {
+        "map": 12,
+        "maskNumbers": 7,
+        "layerMaterials": "cut"
+    },
+    "M2": {
+        "map": 13,
+        "maskNumbers": 8,
+        "layerMaterials": "metal"
+    },
+    "VIA2": {
+        "map": 14,
+        "maskNumbers": 9,
+        "layerMaterials": "cut"
+    },
+    "M3": {
+        "map": 15,
+        "maskNumbers": 10,
+        "layerMaterials": "metal"
+    },
+    "VIA3": {
+        "map": 16,
+        "maskNumbers": 11,
+        "layerMaterials": "cut"
+    },
+    "M4": {
+        "map": 17,
+        "maskNumbers": 12,
+        "layerMaterials": "metal"
+    },
+    "VIA4": {
+        "map": 18,
+        "maskNumbers": 13,
+        "layerMaterials": "cut"
+    },
+    "M5": {
+        "map": 19,
+        "maskNumbers": 14,
+        "layerMaterials": "metal"
+    },
+    "VIA5": {
+        "map": 20,
+        "maskNumbers": 15,
+        "layerMaterials": "cut"
+    },
+    "M6": {
+        "map": 21,
+        "maskNumbers": 16,
+        "layerMaterials": "metal"
+    },
+    "VIA6": {
+        "map": 22,
+        "maskNumbers": 17,
+        "layerMaterials": "cut"
+    },
+    "M7": {
+        "map": 23,
+        "maskNumbers": 18,
+        "layerMaterials": "metal"
+    },
+    "DIOD": {
+        "map": 46,
+        "maskNumbers": 25,
+        "layerMaterials": "other"
+    },
+    "HVTIMP": {
+        "map": 29,
+        "maskNumbers": 38,
+        "layerMaterials": "other"
+    },
+    "LVTIMP": {
+        "map": 30,
+        "maskNumbers": 41,
+        "layerMaterials": "other"
+    },
+    "SBLK": {
+        "map": 9,
+        "maskNumbers": 66,
+        "layerMaterials": "other"
+    },
+    "CBMMARK": {
+        "map": 71,
+        "maskNumbers": 69,
+        "layerMaterials": "other"
+    },
+    "BJTMY": {
+        "map": 47,
+        "maskNumbers": 24,
+        "layerMaterials": "other"
+    },
+    "CTMMARK": {
+        "map": 73,
+        "maskNumbers": 71,
+        "layerMaterials": "other"
+    },
+    "METDMY": {
+        "map": 74,
+        "maskNumbers": 72,
+        "layerMaterials": "other"
+    },
+    "flightLine": {
+        "map": 100
+    },
+    "bbox": {
+        "map": 177
+    },
+    "Unrouted": {
+        "map": 200
+    },
+    "Row": {
+        "map": 201
+    },
+    "Group": {
+        "map": 202
+    },
+    "Cannotoccupy": {
+        "map": 203
+    },
+    "Canplace": {
+        "map": 204
+    },
+    "hardFence": {
+        "map": 205
+    },
+    "softFence": {
+        "map": 206
+    },
+    "y0": {
+        "map": 207
+    },
+    "y1": {
+        "map": 208
+    },
+    "y2": {
+        "map": 209
+    },
+    "y3": {
+        "map": 210
+    },
+    "y4": {
+        "map": 211
+    },
+    "y5": {
+        "map": 212
+    },
+    "y6": {
+        "map": 213
+    },
+    "y7": {
+        "map": 214
+    },
+    "y8": {
+        "map": 215
+    },
+    "y9": {
+        "map": 216
+    },
+    "designFlow": {
+        "map": 217
+    },
+    "stretch": {
+        "map": 218
+    },
+    "edgeLayer": {
+        "map": 219
+    },
+    "changedLayer": {
+        "map": 220
+    },
+    "unset": {
+        "map": 221
+    },
+    "unknown": {
+        "map": 222
+    },
+    "spike": {
+        "map": 223
+    },
+    "hiz": {
+        "map": 224
+    },
+    "resist": {
+        "map": 225
+    },
+    "drive": {
+        "map": 226
+    },
+    "supply": {
+        "map": 227
+    },
+    "wire": {
+        "map": 228
+    },
+    "pin": {
+        "map": 229
+    },
+    "text": {
+        "map": 230
+    },
+    "device": {
+        "map": 231
+    },
+    "border": {
+        "map": 232
+    },
+    "snap": {
+        "map": 233
+    },
+    "align": {
+        "map": 234
+    },
+    "prBoundary": {
+        "map": 235
+    },
+    "instance": {
+        "map": 236
+    },
+    "annotate": {
+        "map": 237
+    },
+    "marker": {
+        "map": 238
+    },
+    "select": {
+        "map": 239
+    },
+    "grid": {
+        "map": 251
+    },
+    "axis": {
+        "map": 252
+    },
+    "hilite": {
+        "map": 253
+    },
+    "background": {
+        "map": 254
+    }
+}

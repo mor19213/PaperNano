@@ -17,14 +17,13 @@ class MyNotGate(DloGen):
         self.layer = params['layer']
     
     def genLayout(self):
-        y = 0.628
-        w = 0.862
-        m1 = 0.1
-        Rect(Layer('NWELL'), Box(-0.064, 0, w+0.064, 1.094))
+        Rect(Layer('NWELL'), Box(-0.064, 0, 0.926, 1.094))
 
-        Rect(Layer('NIMP'), Box(0, y, w, y+m1))
-        Rect(Layer('PIMP'), Box(0, 0, w, 0.942))
+        Rect(Layer('NIMP'), Box(0, 0.628, 0.862, 0.728))
+        Rect(Layer('PIMP'), Box(0, 0, 0.862, 0.942))
 
-        Rect(Layer('NIMP'), Box(0, -y, w, 0))
+        Rect(Layer('NIMP'), Box(0, -0.628, 0.862, 0))
 
-        Rect(Layer('M1'), Box(0, -y-0.02, w, -y-0.081))
+        Rect(Layer('M1'), Box(0, -0.648, 0.862, -0.709))
+        Rect(Layer('DIFF'), Box(0, -0.648, 0.862, -0.71))
+        Rect(Layer('PIMP'), Box(0, -0.628, 0.862, -0.728))

@@ -1,0 +1,154 @@
+{
+    "NWELL": {
+    },
+    "DIFF": {
+    },
+    "DIFF_18": {
+    },
+    "DIFF_25": {
+    },
+    "PIMP": {
+    },
+    "NIMP": {
+    },
+    "PO": {
+    },
+    "RMARK": {
+    },
+    "CO": {
+    },
+    "M1": {
+    },
+    "VIA1": {
+    },
+    "M2": {
+    },
+    "VIA2": {
+    },
+    "M3": {
+    },
+    "VIA3": {
+    },
+    "M4": {
+    },
+    "VIA4": {
+    },
+    "M5": {
+    },
+    "VIA5": {
+    },
+    "M6": {
+    },
+    "VIA6": {
+    },
+    "M7": {
+    },
+    "DIOD": {
+    },
+    "HVTIMP": {
+    },
+    "LVTIMP": {
+    },
+    "SBLK": {
+    },
+    "CBMMARK": {
+    },
+    "BJTMY": {
+    },
+    "CTMMARK": {
+    },
+    "METDMY": {
+    },
+    "flightLine": {
+    },
+    "bbox": {
+    },
+    "Unrouted": {
+    },
+    "Row": {
+    },
+    "Group": {
+    },
+    "Cannotoccupy": {
+    },
+    "Canplace": {
+    },
+    "hardFence": {
+    },
+    "softFence": {
+    },
+    "y0": {
+    },
+    "y1": {
+    },
+    "y2": {
+    },
+    "y3": {
+    },
+    "y4": {
+    },
+    "y5": {
+    },
+    "y6": {
+    },
+    "y7": {
+    },
+    "y8": {
+    },
+    "y9": {
+    },
+    "designFlow": {
+    },
+    "stretch": {
+    },
+    "edgeLayer": {
+    },
+    "changedLayer": {
+    },
+    "unset": {
+    },
+    "unknown": {
+    },
+    "spike": {
+    },
+    "hiz": {
+    },
+    "resist": {
+    },
+    "drive": {
+    },
+    "supply": {
+    },
+    "wire": {
+    },
+    "pin": {
+    },
+    "text": {
+    },
+    "device": {
+    },
+    "border": {
+    },
+    "snap": {
+    },
+    "align": {
+    },
+    "prBoundary": {
+    },
+    "instance": {
+    },
+    "annotate": {
+    },
+    "marker": {
+    },
+    "select": {
+    },
+    "grid": {
+    },
+    "axis": {
+    },
+    "hilite": {
+    },
+    "background": {
+    }
+  }
