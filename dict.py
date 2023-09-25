@@ -8,9 +8,9 @@ def json_a_dict(path):
 
 def a_dict(dict_n, dict_e, key):
     for layer, i in dict_n.items():
-        print(f"layer: {layer}")
-        print(f"key: {key}")
-        print(f"i: {i}")
+        #print(f"layer: {layer}")
+        #print(f"key: {key}")
+        #print(f"i: {i}")
         dict_e[layer][key]=i
     return dict_e
 
@@ -22,7 +22,7 @@ arch['layerMaterials'] = json_a_dict(path+'layerMaterials.json')
 reglas = json_a_dict(path+'layerMapping.json')
 
 for k, val in arch.items():
-    print(f"key: {k}")
+    #print(f"key: {k}")
     reglas = a_dict(val, reglas, str(k))
 
 with open('reglas.json', 'w') as json_file:
