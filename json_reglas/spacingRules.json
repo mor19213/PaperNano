@@ -329,38 +329,6 @@
         "DRC-commands": null,
         "comment": null
       }
-    ],
-    "miscRules": [
-      {
-        "ID": "WIRE",
-        "value": "One or more wires on this layer",
-        "comment": null
-      },
-      {
-        "ID": "VIAS",
-        "value": "One or more vias on this layer",
-        "comment": null
-      },
-      {
-        "ID": "GEOM",
-        "value": "One or more geometric objects on this layer",
-        "comment": null
-      },
-      {
-        "ID": "XOR",
-        "value": "Layer is an XOR of two or more layers",
-        "comment": null
-      },
-      {
-        "ID": "OR",
-        "value": "Layer is an OR of two or more layers",
-        "comment": null
-      },
-      {
-        "ID": "AND",
-        "value": "Layer is an AND of two or more layers",
-        "comment": null
-      }
     ]
   }
   

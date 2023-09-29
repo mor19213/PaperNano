@@ -1,290 +1,625 @@
-{
-    "NWELL": {
-        "map": 1,
-        "maskNumbers": 1,
-        "layerMaterials": "nWell"
-    },
-    "DIFF": {
-        "map": 3,
-        "maskNumbers": 2,
-        "layerMaterials": "diffusion"
-    },
-    "DIFF_18": {
-        "map": 6,
-        "maskNumbers": 3,
-        "layerMaterials": "recognition"
-    },
-    "DIFF_25": {
-        "map": 75,
-        "maskNumbers": 75,
-        "layerMaterials": "recognition"
-    },
-    "PIMP": {
-        "map": 4,
-        "maskNumbers": 4,
-        "layerMaterials": "pImplant"
-    },
-    "NIMP": {
-        "map": 5,
-        "maskNumbers": 5,
-        "layerMaterials": "nImplant"
-    },
-    "PO": {
-        "map": 10,
-        "maskNumbers": 53,
-        "layerMaterials": "poly"
-    },
-    "RMARK": {
-        "map": 49,
-        "maskNumbers": 65,
-        "layerMaterials": "other"
-    },
-    "CO": {
-        "map": 28,
-        "maskNumbers": 23,
-        "layerMaterials": "cut"
-    },
-    "M1": {
-        "map": 11,
-        "maskNumbers": 6,
-        "layerMaterials": "metal"
-    },
-    "VIA1": {
-        "map": 12,
-        "maskNumbers": 7,
-        "layerMaterials": "cut"
-    },
-    "M2": {
-        "map": 13,
-        "maskNumbers": 8,
-        "layerMaterials": "metal"
-    },
-    "VIA2": {
-        "map": 14,
-        "maskNumbers": 9,
-        "layerMaterials": "cut"
-    },
-    "M3": {
-        "map": 15,
-        "maskNumbers": 10,
-        "layerMaterials": "metal"
-    },
-    "VIA3": {
-        "map": 16,
-        "maskNumbers": 11,
-        "layerMaterials": "cut"
-    },
-    "M4": {
-        "map": 17,
-        "maskNumbers": 12,
-        "layerMaterials": "metal"
-    },
-    "VIA4": {
-        "map": 18,
-        "maskNumbers": 13,
-        "layerMaterials": "cut"
-    },
-    "M5": {
-        "map": 19,
-        "maskNumbers": 14,
-        "layerMaterials": "metal"
-    },
-    "VIA5": {
-        "map": 20,
-        "maskNumbers": 15,
-        "layerMaterials": "cut"
-    },
-    "M6": {
-        "map": 21,
-        "maskNumbers": 16,
-        "layerMaterials": "metal"
-    },
-    "VIA6": {
-        "map": 22,
-        "maskNumbers": 17,
-        "layerMaterials": "cut"
-    },
-    "M7": {
-        "map": 23,
-        "maskNumbers": 18,
-        "layerMaterials": "metal"
-    },
-    "DIOD": {
-        "map": 46,
-        "maskNumbers": 25,
-        "layerMaterials": "other"
-    },
-    "HVTIMP": {
-        "map": 29,
-        "maskNumbers": 38,
-        "layerMaterials": "other"
-    },
-    "LVTIMP": {
-        "map": 30,
-        "maskNumbers": 41,
-        "layerMaterials": "other"
-    },
-    "SBLK": {
-        "map": 9,
-        "maskNumbers": 66,
-        "layerMaterials": "other"
-    },
-    "CBMMARK": {
-        "map": 71,
-        "maskNumbers": 69,
-        "layerMaterials": "other"
-    },
-    "BJTMY": {
-        "map": 47,
-        "maskNumbers": 24,
-        "layerMaterials": "other"
-    },
-    "CTMMARK": {
-        "map": 73,
-        "maskNumbers": 71,
-        "layerMaterials": "other"
-    },
-    "METDMY": {
-        "map": 74,
-        "maskNumbers": 72,
-        "layerMaterials": "other"
-    },
-    "flightLine": {
-        "map": 100
-    },
-    "bbox": {
-        "map": 177
-    },
-    "Unrouted": {
-        "map": 200
-    },
-    "Row": {
-        "map": 201
-    },
-    "Group": {
-        "map": 202
-    },
-    "Cannotoccupy": {
-        "map": 203
-    },
-    "Canplace": {
-        "map": 204
-    },
-    "hardFence": {
-        "map": 205
-    },
-    "softFence": {
-        "map": 206
-    },
-    "y0": {
-        "map": 207
-    },
-    "y1": {
-        "map": 208
-    },
-    "y2": {
-        "map": 209
-    },
-    "y3": {
-        "map": 210
-    },
-    "y4": {
-        "map": 211
-    },
-    "y5": {
-        "map": 212
-    },
-    "y6": {
-        "map": 213
-    },
-    "y7": {
-        "map": 214
-    },
-    "y8": {
-        "map": 215
-    },
-    "y9": {
-        "map": 216
-    },
-    "designFlow": {
-        "map": 217
-    },
-    "stretch": {
-        "map": 218
-    },
-    "edgeLayer": {
-        "map": 219
-    },
-    "changedLayer": {
-        "map": 220
-    },
-    "unset": {
-        "map": 221
-    },
-    "unknown": {
-        "map": 222
-    },
-    "spike": {
-        "map": 223
-    },
-    "hiz": {
-        "map": 224
-    },
-    "resist": {
-        "map": 225
-    },
-    "drive": {
-        "map": 226
-    },
-    "supply": {
-        "map": 227
-    },
-    "wire": {
-        "map": 228
-    },
-    "pin": {
-        "map": 229
-    },
-    "text": {
-        "map": 230
-    },
-    "device": {
-        "map": 231
-    },
-    "border": {
-        "map": 232
-    },
-    "snap": {
-        "map": 233
-    },
-    "align": {
-        "map": 234
-    },
-    "prBoundary": {
-        "map": 235
-    },
-    "instance": {
-        "map": 236
-    },
-    "annotate": {
-        "map": 237
-    },
-    "marker": {
-        "map": 238
-    },
-    "select": {
-        "map": 239
-    },
-    "grid": {
-        "map": 251
-    },
-    "axis": {
-        "map": 252
-    },
-    "hilite": {
-        "map": 253
-    },
-    "background": {
-        "map": 254
+[
+    {
+        "NWELL": {
+            "map": 1,
+            "layerMaterials": "nWell",
+            "maskNumbers": 1
+        },
+        "DIFF": {
+            "map": 3,
+            "layerMaterials": "diffusion",
+            "maskNumbers": 2
+        },
+        "DIFF_18": {
+            "map": 6,
+            "layerMaterials": "recognition",
+            "maskNumbers": 3
+        },
+        "DIFF_25": {
+            "map": 75,
+            "layerMaterials": "recognition",
+            "maskNumbers": 75
+        },
+        "PIMP": {
+            "map": 4,
+            "layerMaterials": "pImplant",
+            "maskNumbers": 4
+        },
+        "NIMP": {
+            "map": 5,
+            "layerMaterials": "nImplant",
+            "maskNumbers": 5
+        },
+        "PO": {
+            "map": 10,
+            "layerMaterials": "poly",
+            "maskNumbers": 53
+        },
+        "RMARK": {
+            "map": 49,
+            "layerMaterials": "other",
+            "maskNumbers": 65
+        },
+        "CO": {
+            "map": 28,
+            "layerMaterials": "cut",
+            "maskNumbers": 23
+        },
+        "M1": {
+            "map": 11,
+            "layerMaterials": "metal",
+            "maskNumbers": 6
+        },
+        "VIA1": {
+            "map": 12,
+            "layerMaterials": "cut",
+            "maskNumbers": 7
+        },
+        "M2": {
+            "map": 13,
+            "layerMaterials": "metal",
+            "maskNumbers": 8
+        },
+        "VIA2": {
+            "map": 14,
+            "layerMaterials": "cut",
+            "maskNumbers": 9
+        },
+        "M3": {
+            "map": 15,
+            "layerMaterials": "metal",
+            "maskNumbers": 10
+        },
+        "VIA3": {
+            "map": 16,
+            "layerMaterials": "cut",
+            "maskNumbers": 11
+        },
+        "M4": {
+            "map": 17,
+            "layerMaterials": "metal",
+            "maskNumbers": 12
+        },
+        "VIA4": {
+            "map": 18,
+            "layerMaterials": "cut",
+            "maskNumbers": 13
+        },
+        "M5": {
+            "map": 19,
+            "layerMaterials": "metal",
+            "maskNumbers": 14
+        },
+        "VIA5": {
+            "map": 20,
+            "layerMaterials": "cut",
+            "maskNumbers": 15
+        },
+        "M6": {
+            "map": 21,
+            "layerMaterials": "metal",
+            "maskNumbers": 16
+        },
+        "VIA6": {
+            "map": 22,
+            "layerMaterials": "cut",
+            "maskNumbers": 17
+        },
+        "M7": {
+            "map": 23,
+            "layerMaterials": "metal",
+            "maskNumbers": 18
+        },
+        "DIOD": {
+            "map": 46,
+            "layerMaterials": "other",
+            "maskNumbers": 25
+        },
+        "HVTIMP": {
+            "map": 29,
+            "layerMaterials": "other",
+            "maskNumbers": 38
+        },
+        "LVTIMP": {
+            "map": 30,
+            "layerMaterials": "other",
+            "maskNumbers": 41
+        },
+        "SBLK": {
+            "map": 9,
+            "layerMaterials": "other",
+            "maskNumbers": 66
+        },
+        "CBMMARK": {
+            "map": 71,
+            "layerMaterials": "other",
+            "maskNumbers": 69
+        },
+        "BJTMY": {
+            "map": 47,
+            "layerMaterials": "other",
+            "maskNumbers": 24
+        },
+        "CTMMARK": {
+            "map": 73,
+            "layerMaterials": "other",
+            "maskNumbers": 71
+        },
+        "METDMY": {
+            "map": 74,
+            "layerMaterials": "other",
+            "maskNumbers": 72
+        },
+        "flightLine": {
+            "map": 100
+        },
+        "bbox": {
+            "map": 177
+        },
+        "Unrouted": {
+            "map": 200
+        },
+        "Row": {
+            "map": 201
+        },
+        "Group": {
+            "map": 202
+        },
+        "Cannotoccupy": {
+            "map": 203
+        },
+        "Canplace": {
+            "map": 204
+        },
+        "hardFence": {
+            "map": 205
+        },
+        "softFence": {
+            "map": 206
+        },
+        "y0": {
+            "map": 207
+        },
+        "y1": {
+            "map": 208
+        },
+        "y2": {
+            "map": 209
+        },
+        "y3": {
+            "map": 210
+        },
+        "y4": {
+            "map": 211
+        },
+        "y5": {
+            "map": 212
+        },
+        "y6": {
+            "map": 213
+        },
+        "y7": {
+            "map": 214
+        },
+        "y8": {
+            "map": 215
+        },
+        "y9": {
+            "map": 216
+        },
+        "designFlow": {
+            "map": 217
+        },
+        "stretch": {
+            "map": 218
+        },
+        "edgeLayer": {
+            "map": 219
+        },
+        "changedLayer": {
+            "map": 220
+        },
+        "unset": {
+            "map": 221
+        },
+        "unknown": {
+            "map": 222
+        },
+        "spike": {
+            "map": 223
+        },
+        "hiz": {
+            "map": 224
+        },
+        "resist": {
+            "map": 225
+        },
+        "drive": {
+            "map": 226
+        },
+        "supply": {
+            "map": 227
+        },
+        "wire": {
+            "map": 228
+        },
+        "pin": {
+            "map": 229
+        },
+        "text": {
+            "map": 230
+        },
+        "device": {
+            "map": 231
+        },
+        "border": {
+            "map": 232
+        },
+        "snap": {
+            "map": 233
+        },
+        "align": {
+            "map": 234
+        },
+        "prBoundary": {
+            "map": 235
+        },
+        "instance": {
+            "map": 236
+        },
+        "annotate": {
+            "map": 237
+        },
+        "marker": {
+            "map": 238
+        },
+        "select": {
+            "map": 239
+        },
+        "grid": {
+            "map": 251
+        },
+        "axis": {
+            "map": 252
+        },
+        "hilite": {
+            "map": 253
+        },
+        "background": {
+            "map": 254
+        }
+    },
+    {
+        "physicalRules": "default",
+        "spacingRules": [
+            {
+                "ID": "OFFGRID.RMARK",
+                "layer1": "RMARK",
+                "layer2": null,
+                "value": 0.001,
+                "DRC-commands": null,
+                "comment": "PWELL vertex not located on 0.001 grid"
+            },
+            {
+                "ID": "OFFGRID.METDMY",
+                "layer1": "METDMY",
+                "layer2": null,
+                "value": 0.001,
+                "DRC-commands": null,
+                "comment": "PWELL vertex not located on 0.001 grid"
+            },
+            {
+                "ID": "OFFGRID.CTMMARK",
+                "layer1": "CTMMARK",
+                "layer2": null,
+                "value": 0.001,
+                "DRC-commands": null,
+                "comment": "PWELL vertex not located on 0.001 grid"
+            },
+            {
+                "ID": "OFFGRID.CBMMARK",
+                "layer1": "CBMMARK",
+                "layer2": null,
+                "value": 0.001,
+                "DRC-commands": null,
+                "comment": "PWELL vertex not located on 0.001 grid"
+            },
+            {
+                "ID": "OFFGRID.BJTMY",
+                "layer1": "BJTMY",
+                "layer2": null,
+                "value": 0.001,
+                "DRC-commands": null,
+                "comment": "PWELL vertex not located on 0.001 grid"
+            },
+            {
+                "ID": "OFFGRID.DIOD",
+                "layer1": "DIOD",
+                "layer2": null,
+                "value": 0.001,
+                "DRC-commands": null,
+                "comment": "PWELL vertex not located on 0.001 grid"
+            },
+            {
+                "ID": "OFFGRID.SBLK",
+                "layer1": "SBLK",
+                "layer2": null,
+                "value": 0.001,
+                "DRC-commands": null,
+                "comment": "PWELL vertex not located on 0.001 grid"
+            },
+            {
+                "ID": "OFFGRID.HVTIMP",
+                "layer1": "OFFGRID(HVTIMP",
+                "layer2": "0.001)",
+                "value": "PWELL vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.LVTIMP",
+                "layer1": "OFFGRID(LVTIMP",
+                "layer2": "0.001)",
+                "value": "PWELL vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.NWELL",
+                "layer1": "OFFGRID(NWELL",
+                "layer2": "0.001)",
+                "value": "NWELL vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.OD",
+                "layer1": "OFFGRID(DIFF",
+                "layer2": "0.001)",
+                "value": "OD vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.THGATE",
+                "layer1": "OFFGRID(DIFF_18",
+                "layer2": "0.001)",
+                "value": "DIFF_18 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.THGATE25",
+                "layer1": "OFFGRID(DIFF_25",
+                "layer2": "0.001)",
+                "value": "DIFF_25 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.PPLUS",
+                "layer1": "OFFGRID(PIMP",
+                "layer2": "0.001)",
+                "value": "PPLUS vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.NPLUS",
+                "layer1": "OFFGRID(NIMP",
+                "layer2": "0.001)",
+                "value": "NPLUS vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.POLY",
+                "layer1": "OFFGRID(PO",
+                "layer2": "0.001)",
+                "value": "POLY vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.CO",
+                "layer1": "OFFGRID(CO",
+                "layer2": "0.001)",
+                "value": "CO vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.M1",
+                "layer1": "OFFGRID(M1",
+                "layer2": "0.001)",
+                "value": "M1 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.VIA1",
+                "layer1": "OFFGRID(VIA1",
+                "layer2": "0.001)",
+                "value": "VIA1 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.M2",
+                "layer1": "OFFGRID(M2",
+                "layer2": "0.001)",
+                "value": "M2 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.VIA2",
+                "layer1": "OFFGRID(VIA2",
+                "layer2": "0.001)",
+                "value": "VIA2 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.M3",
+                "layer1": "OFFGRID(M3",
+                "layer2": "0.001)",
+                "value": "M3 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.VIA3",
+                "layer1": "OFFGRID(VIA3",
+                "layer2": "0.001)",
+                "value": "VIA3 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.M4",
+                "layer1": "OFFGRID(M4",
+                "layer2": "0.001)",
+                "value": "M4 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.VIA4",
+                "layer1": "OFFGRID(VIA4",
+                "layer2": "0.001)",
+                "value": "VIA4 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.M5",
+                "layer1": "OFFGRID(M5",
+                "layer2": "0.001)",
+                "value": "M5 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.VIA5",
+                "layer1": "OFFGRID(VIA5",
+                "layer2": "0.001)",
+                "value": "VIA5 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.M6",
+                "layer1": "OFFGRID(M6",
+                "layer2": "0.001)",
+                "value": "M6 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.VIA6",
+                "layer1": "OFFGRID(VIA6",
+                "layer2": "0.001)",
+                "value": "VIA6 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.M7",
+                "layer1": "OFFGRID(M7",
+                "layer2": "0.001)",
+                "value": "M7 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.VIA7",
+                "layer1": "OFFGRID(VIA7",
+                "layer2": "0.001)",
+                "value": "VIA7 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.M8",
+                "layer1": "OFFGRID(M8",
+                "layer2": "0.001)",
+                "value": "M8 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.VIA8",
+                "layer1": "OFFGRID(VIA8",
+                "layer2": "0.001)",
+                "value": "VIA8 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.M9",
+                "layer1": "OFFGRID(M9",
+                "layer2": "0.001)",
+                "value": "M9 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.VIA9",
+                "layer1": "OFFGRID(VIA9",
+                "layer2": "0.001)",
+                "value": "VIA9 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.M10",
+                "layer1": "OFFGRID(M10",
+                "layer2": "0.001)",
+                "value": "M10 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.VIA10",
+                "layer1": "OFFGRID(VIA10",
+                "layer2": "0.001)",
+                "value": "VIA10 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.M11",
+                "layer1": "OFFGRID(M11",
+                "layer2": "0.001)",
+                "value": "M11 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.VIA11",
+                "layer1": "OFFGRID(VIA11",
+                "layer2": "0.001)",
+                "value": "VIA11 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.M12",
+                "layer1": "OFFGRID(M12",
+                "layer2": "0.001)",
+                "value": "M12 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            },
+            {
+                "ID": "OFFGRID.VIA12",
+                "layer1": "OFFGRID(VIA12",
+                "layer2": "0.001)",
+                "value": "VIA12 vertex not located on 0.001 grid",
+                "DRC-commands": null,
+                "comment": null
+            }
+        ]
     }
-}
+]
