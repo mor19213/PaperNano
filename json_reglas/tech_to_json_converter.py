@@ -1,36 +1,41 @@
 import re
 
+def parse_attributes(attribute_str):
+    return set(attribute_str.split())
+
+def process_nested_value(nested_value, level):
+    final_dict = {'level': level, 'attributes': [], 'children': []}
+    quoted_strings = re.findall(r'"([^"]+)"', nested_value)
+    string_without_quotes = re.sub(r'"[^"]+"', '*QS*', nested_value)
+    elements = re.split(r'\s{2,}', string_without_quotes)
+    for element in elements:
+        if element == '*QS*':
+            final_dict['attributes'].append(quoted_strings.pop(0))
+        else:
+            attribute_pattern = r'(\w+\(.*\))'
+            if nested_attribute := re.findall(attribute_pattern, element):
+                final_dict['children'].append(transform_to_json(f"{nested_attribute}", level + 1))
+            else:
+                final_dict['attributes'].append(element)
+    return final_dict
+
 def transform_to_json(s, level=1):
     pattern = r'([\s\S]+?)\(([\s\S]+)\)'
     matches = re.findall(pattern, s)
     final_dict = {}
-    if not matches:
-        return None
+
     for match in matches:
-        key = match[0]
-        value_str = match[1]
-        final_dict[key] = {}
-        nested_match = re.findall(r'(\s\S+)\(([\s\S]+?\"\s+)\)', value_str)
-        if nested_match:
-            for nested in nested_match:
-                nested_key = nested[0]
-                nested_value = nested[1]
-                final_dict[key][nested_key] = {'level': level, 'attributes': [], 'children': []}
-                quoted_strings = re.findall(r'"([^"]+)"', nested_value)
-                string_without_quotes = re.sub(r'"[^"]+"', '*QS*', nested_value)
-                elements = re.split(r'\s{2,}',string_without_quotes)
-                results = [element.replace('*QS*', quoted_strings.pop(0)) if element == '*QS*' else element for element in elements]
-                for result in results:
-                    attribute_pattern = r'(\w+\(.*\))'
-                    nested_attribute = re.findall(attribute_pattern, result)
-                    if nested_attribute:
-                        final_dict[key][nested_key]['children'].append(transform_to_json(f"{nested_attribute}", level+1))
-                    else:
-                        final_dict[key][nested_key]['attributes'].append(result)
+        key, value_str = match
+        if nested_match := re.findall(
+            r'(\s\S+)\(([\s\S]+?\"\s+)\)', value_str
+        ):
+            final_dict[key] = {
+                nested_key: process_nested_value(nested_value, level)
+                for nested_key, nested_value in nested_match
+            }
         else:
-            attributes = {attribute for attribute in value_str.split()}
-            final_dict[key] = attributes
-    
+            final_dict[key] = parse_attributes(value_str)
+
     return final_dict
 
 f = open("Santana.tech", "r")
