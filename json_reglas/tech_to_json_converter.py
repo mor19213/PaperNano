@@ -1,7 +1,7 @@
 import re
 
 def parse_attributes(attribute_str):
-    return set(attribute_str.split())
+    return list(set(attribute_str.split()))
 
 def process_nested_value(nested_value, level):
     final_dict = {'level': level, 'attributes': [], 'children': []}
