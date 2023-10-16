@@ -13,7 +13,8 @@ def process_nested_value(nested_value, level):
             final_dict['attributes'].append(quoted_strings.pop(0))
         else:
             attribute_pattern = r'(\w+\(.*\))'
-            if nested_attribute := re.findall(attribute_pattern, element):
+            nested_attribute = re.findall(attribute_pattern, element)
+            if nested_attribute:
                 final_dict['children'].append(transform_to_json(f"{nested_attribute}", level + 1))
             else:
                 final_dict['attributes'].append(element)
@@ -26,9 +27,10 @@ def transform_to_json(s, level=1):
 
     for match in matches:
         key, value_str = match
-        if nested_match := re.findall(
+        nested_match = re.findall(
             r'(\s\S+)\(([\s\S]+?\"\s+)\)', value_str
-        ):
+        )
+        if nested_match:
             final_dict[key] = {
                 nested_key: process_nested_value(nested_value, level)
                 for nested_key, nested_value in nested_match
@@ -38,9 +40,8 @@ def transform_to_json(s, level=1):
 
     return final_dict
 
-f = open("Santana.tech", "r")
-
-rules = re.findall(r"(orderedSpacingRules[\s\S]*);orderedSpacingRules", f.read())
+with open("Santana.tech", "r") as f:
+    rules = re.findall(r"(orderedSpacingRules[\s\S]*);orderedSpacingRules", f.read())
 
 final_rules = []
 for rule in rules[0].split("\n"):
