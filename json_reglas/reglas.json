@@ -1,0 +1,15 @@
+{
+    "orderedSpacingRules": {
+        " OD.NW.1": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "NWELL",
+                "DIFF",
+                "0.07",
+                "NWELL overlap NDIFF tie down < 0.07",
+                ""
+            ],
+            "children": [
+                {
+                    "['ENCLOSURE": 

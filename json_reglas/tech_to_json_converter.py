@@ -1,4 +1,5 @@
 import re
+import json
 
 def parse_attributes(attribute_str):
     return set(attribute_str.split())
@@ -57,3 +58,6 @@ ordered_spacing_rules = '\n'.join(final_rules)
 # Transform the input string to JSON
 json_result = transform_to_json(ordered_spacing_rules)
 print(json_result)
+
+with open('reglas.json', 'w') as json_file:
+    json.dump(json_result, json_file, indent=4)
