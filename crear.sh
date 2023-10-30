@@ -17,5 +17,10 @@ rm -rf ./GeneratedLib/
 #cngenlib --create --view --techfile $CNI_ROOT/tech/cni130/santanaTech/Santana.tech pkg:$libreria GeneratedLib ~/GeneratedLib
 cngenlib --create --view --techfile /usr/synopsys/iPDK/SAED32nm_PDK_04152022/SAED_PDK_32_28/Santana.tech pkg:$libreria GeneratedLib ./GeneratedLib
 
+rm -rf ~/Desktop/Folder_de_Trabajo/pelmor/*
+cp -r GeneratedLib/* ~/Desktop/Folder_de_Trabajo/pelmor/
+
 wait
+
+cd ~/Desktop/Folder_de_Trabajo
 custom_compiler

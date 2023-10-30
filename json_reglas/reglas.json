@@ -1,6 +1,6 @@
 {
     "orderedSpacingRules": {
-        " OD.NW.1": {
+        "OD.NW.1": {
             "level": 1,
             "attributes": [
                 " minExtension",
@@ -12,4 +12,1367 @@
             ],
             "children": [
                 {
-                    "['ENCLOSURE": 
+                    "ENCLOSURE": [
+                        "DIFF",
+                        "NWELL",
+                        "ABUT",
+                        "<0.065",
+                        "SINGULAR",
+                        "OVERLAPPING"
+                    ]
+                }
+            ]
+        },
+        "OD.NW.2": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "NWELL",
+                "PDIFF",
+                "0.065",
+                "NWELL overlap PDIFF < 0.065",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "NWELL",
+                        "ABUT",
+                        "<0.065",
+                        "PDIFF",
+                        "SINGULAR",
+                        "OVERLAPPING"
+                    ]
+                }
+            ]
+        },
+        "THGATE.ENCLOSE.GATE": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "GATEH_W",
+                "DIFF_18",
+                "0.08",
+                "DIFF_18 enclosure high voltage GATE < 0.08",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "GATEH_W",
+                        "ABUT",
+                        "<0.08",
+                        "DIFF_18"
+                    ]
+                }
+            ]
+        },
+        "THGATE.ENCLOSE.OD": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "DIFF_18",
+                "DIFF",
+                "0.15",
+                "DIFF_18 enclosure high voltage GATE < 0.15",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "DIFF",
+                        "<0.15",
+                        "ABUT",
+                        "DIFF_18"
+                    ]
+                }
+            ]
+        },
+        "THGATE25.ENCLOSE.GATE": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "GATEH25_W",
+                "DIFF_25",
+                "0.08",
+                "DIFF_25 enclosure high voltage GATE < 0.08",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "GATEH25_W",
+                        "<0.08",
+                        "ABUT",
+                        "DIFF_25"
+                    ]
+                }
+            ]
+        },
+        "THGATE25.ENCLOSE.OD": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "DIFF_25",
+                "DIFF",
+                "0.15",
+                "DIFF_25 enclosure high voltage GATE < 0.15",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "DIFF",
+                        "ABUT",
+                        "DIFF_25",
+                        "<0.15"
+                    ]
+                }
+            ]
+        },
+        "SBLK.ENCLOSE.POLY": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "SBLK",
+                "PO",
+                "0.18",
+                "DIFF_18 enclosure high voltage GATE < 0.16",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "PO",
+                        "SBLK",
+                        "ABUT",
+                        "<0.18"
+                    ]
+                }
+            ]
+        },
+        "RMARK.ENCLOSE.OD": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "RMARK",
+                "DIFF",
+                "0.05",
+                "DIFF_18 enclosure high voltage GATE < 0.16",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "DIFF",
+                        "<0.05",
+                        "ABUT",
+                        "RMARK"
+                    ]
+                }
+            ]
+        },
+        "RMARK.ENCLOSE.POLY": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "RMARK",
+                "PO",
+                "0.05",
+                "DIFF_18 enclosure high voltage GATE < 0.16",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "<0.05",
+                        "PO",
+                        "ABUT",
+                        "RMARK"
+                    ]
+                }
+            ]
+        },
+        "POLY.SDWIDTH": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "DIFF",
+                "PO",
+                "0.102",
+                "OD overhang gate < 0.08",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "DIFF",
+                        "<89.5",
+                        "ABUT",
+                        "PO",
+                        "<0.102",
+                        "SINGULAR"
+                    ]
+                }
+            ]
+        },
+        "POLY.ENDCAP": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "PO",
+                "GATET",
+                "0.06",
+                "Transistor endcap < 0.08",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "<0.06",
+                        "<89.5",
+                        "ABUT",
+                        "PO",
+                        "SINGULAR",
+                        "GATET"
+                    ]
+                }
+            ]
+        },
+        "POLY.ENDCAP1": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "PO",
+                "GATEH",
+                "0.08",
+                "Transistor endcap < 0.08",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "PO",
+                        "GATEH",
+                        "ABUT",
+                        "<0.08"
+                    ]
+                }
+            ]
+        },
+        "POLY.ENDCAP2": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "PO",
+                "GATEH25",
+                "0.08",
+                "Transistor endcap < 0.08",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "PO",
+                        "GATEH25",
+                        "ABUT",
+                        "<0.08"
+                    ]
+                }
+            ]
+        },
+        "PPLUS.ENCLOSE.POLY": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "PIMP",
+                "PO",
+                "0.065",
+                "PIMP enclosure high voltage GATE < 0.16",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "PIMP",
+                        "PO",
+                        "ABUT",
+                        "<0.065"
+                    ]
+                }
+            ]
+        },
+        "NPLUS.ENCLOSE.POLY": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "NIMP",
+                "PO",
+                "0.065",
+                "NIMP enclosure high voltage GATE < 0.16",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "PO",
+                        "NIMP",
+                        "ABUT",
+                        "<0.065"
+                    ]
+                }
+            ]
+        },
+        "PPLUS.ENCLOSE.CO": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "PIMP",
+                "CO",
+                "0.04",
+                "PIMP enclosure high voltage GATE < 0.16",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "PIMP",
+                        "CO",
+                        "ABUT",
+                        "<0.04"
+                    ]
+                }
+            ]
+        },
+        "NPLUS.ENCLOSE.CO": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "NIMP",
+                "CO",
+                "0.04",
+                "NIMP enclosure high voltage GATE < 0.16",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "CO",
+                        "NIMP",
+                        "ABUT",
+                        "<0.04"
+                    ]
+                }
+            ]
+        },
+        "NWELL.ENCLOSE.POLY": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "NWELL",
+                "PO",
+                "0.02",
+                "NWELL enclosure high voltage GATE < 0.02",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "PO",
+                        "<0.02",
+                        "ABUT",
+                        "NWELL"
+                    ]
+                }
+            ]
+        },
+        "PPLUS.ENCLOSE.OD": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "PIMP",
+                "DIFF",
+                "0.05",
+                "(",
+                ")",
+                "PPLUS enclosure OD < 0.05",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "PIMP",
+                        "ABUT",
+                        "<0.05",
+                        "SINGULAR",
+                        "ACT"
+                    ]
+                },
+                {
+                    "Y": [
+                        "ENCLOSURE(PIMP",
+                        "<0.001",
+                        "EDGE_OUTPUT2)",
+                        "PACT",
+                        "ABUT",
+                        "=0"
+                    ]
+                },
+                {
+                    "Z": [
+                        "GROW_EDGE(Y",
+                        "OUTSIDE_GROWTH",
+                        "0.001)"
+                    ]
+                },
+                {
+                    "INTERACT": [
+                        "NDIFF",
+                        "Z",
+                        "NEGATED"
+                    ]
+                }
+            ]
+        },
+        "PPLUS.ENCLOSE.PTAP": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "PIMP",
+                "PTAP",
+                "0.02",
+                "(",
+                ")",
+                "Enclosure of PTAP by PPLUS < 0.02",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "PIMP",
+                        "ABUT",
+                        "SINGULAR",
+                        "<0.02",
+                        "TAP"
+                    ]
+                },
+                {
+                    "X": [
+                        "ENCLOSURE(PIMP",
+                        "<0.001",
+                        "EDGE_OUTPUT2)",
+                        "ABUT",
+                        "PTAP",
+                        "=0"
+                    ]
+                },
+                {
+                    "Y": [
+                        "GROW_EDGE(X",
+                        "OUTSIDE_GROWTH",
+                        "0.001)"
+                    ]
+                },
+                {
+                    "INTERACT": [
+                        "Y",
+                        "NEGATED",
+                        "NDIFF"
+                    ]
+                }
+            ]
+        },
+        "NPLUS.ENCLOSE.OD": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "NIMP",
+                "DIFF",
+                "0.05",
+                "(",
+                ")",
+                "NPLUS enclosure OD < 0.05",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "NIMP",
+                        "ABUT",
+                        "<0.05",
+                        "SINGULAR",
+                        "ACT"
+                    ]
+                },
+                {
+                    "Y": [
+                        "<0.001",
+                        "NACT",
+                        "EDGE_OUTPUT2)",
+                        "ABUT",
+                        "ENCLOSURE(NIMP",
+                        "=0"
+                    ]
+                },
+                {
+                    "Z": [
+                        "GROW_EDGE(Y",
+                        "OUTSIDE_GROWTH",
+                        "0.001)"
+                    ]
+                },
+                {
+                    "INTERACT": [
+                        "PDIFF",
+                        "Z",
+                        "NEGATED"
+                    ]
+                }
+            ]
+        },
+        "NPLUS.ENCLOSE.NTAP": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "NIMP",
+                "NTAP",
+                "0.02",
+                "(",
+                ")",
+                "Enclosure of NTAP by NPLUS < 0.02",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "NIMP",
+                        "ABUT",
+                        "SINGULAR",
+                        "<0.02",
+                        "TAP"
+                    ]
+                },
+                {
+                    "X": [
+                        "<0.001",
+                        "EDGE_OUTPUT2)",
+                        "ABUT",
+                        "ENCLOSURE(NIMP",
+                        "=0",
+                        "NTAP"
+                    ]
+                },
+                {
+                    "Y": [
+                        "GROW_EDGE(X",
+                        "OUTSIDE_GROWTH",
+                        "0.001)"
+                    ]
+                },
+                {
+                    "INTERACT": [
+                        "PDIFF",
+                        "Y",
+                        "NEGATED"
+                    ]
+                }
+            ]
+        },
+        "HVTIMP.ENCLOSE.PACT": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "HVTIMP",
+                "DIFF",
+                "0.05",
+                "(",
+                ")",
+                "PPLUS enclosure OD < 0.05",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "ABUT",
+                        "<0.05",
+                        "HVTIMP",
+                        "SINGULAR",
+                        "ACT"
+                    ]
+                },
+                {
+                    "Y": [
+                        "<0.001",
+                        "EDGE_OUTPUT2)",
+                        "PACT",
+                        "ABUT",
+                        "ENCLOSURE(HVTIMP",
+                        "=0"
+                    ]
+                },
+                {
+                    "Z": [
+                        "GROW_EDGE(Y",
+                        "OUTSIDE_GROWTH",
+                        "0.001)"
+                    ]
+                },
+                {
+                    "INTERACT": [
+                        "NDIFF",
+                        "Z",
+                        "NEGATED"
+                    ]
+                }
+            ]
+        },
+        "LVTIMP.ENCLOSE.PACT": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "LVTIMP",
+                "DIFF",
+                "0.05",
+                "(",
+                ")",
+                "PPLUS enclosure OD < 0.05",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "ABUT",
+                        "<0.05",
+                        "LVTIMP",
+                        "SINGULAR",
+                        "ACT"
+                    ]
+                },
+                {
+                    "Y": [
+                        "ENCLOSURE(LVTIMP",
+                        "<0.001",
+                        "EDGE_OUTPUT2)",
+                        "PACT",
+                        "ABUT",
+                        "=0"
+                    ]
+                },
+                {
+                    "Z": [
+                        "GROW_EDGE(Y",
+                        "OUTSIDE_GROWTH",
+                        "0.001)"
+                    ]
+                },
+                {
+                    "INTERACT": [
+                        "NDIFF",
+                        "Z",
+                        "NEGATED"
+                    ]
+                }
+            ]
+        },
+        "CONTACT.ENCLOSE.2": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "PO",
+                "CO",
+                "0.034",
+                "(",
+                ")",
+                "PPLUS enclosure OD < 0.05",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "ABUT",
+                        "PO",
+                        "<0.034",
+                        "SINGULAR",
+                        "CO"
+                    ]
+                },
+                {
+                    "Y": [
+                        "<0.001",
+                        "EDGE_OUTPUT2)",
+                        "ABUT",
+                        "ENCLOSURE(PO",
+                        "=0",
+                        "CO"
+                    ]
+                },
+                {
+                    "Z": [
+                        "GROW_EDGE(Y",
+                        "OUTSIDE_GROWTH",
+                        "0.001)"
+                    ]
+                },
+                {
+                    "INTERACT": [
+                        "NDIFF",
+                        "Z",
+                        "NEGATED"
+                    ]
+                }
+            ]
+        },
+        "METAL1.ENCLOSE.1": {
+            "level": 1,
+            "attributes": [
+                "",
+                "Enclosure of METAL1 beyond CONTACT is 0.05",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "<0.004",
+                        "M1",
+                        "ABUT",
+                        "OUTSIDE_IS_ERROR",
+                        "SINGULAR",
+                        "CO",
+                        "OVERLAPPING"
+                    ]
+                }
+            ]
+        },
+        "METAL1.ENCLOSE.2": {
+            "level": 1,
+            "attributes": [
+                " minDualExtension",
+                "M1",
+                "CO",
+                "(0.004 0.02)",
+                "(",
+                ")",
+                "*QS*)",
+                "VIA1.ENCLOSE.1(",
+                "Enclosure of METAL1 end-of-line beyond CONTACT is 0.05",
+                ""
+            ],
+            "children": [
+                {
+                    "X": [
+                        "EDGE_OUTPUT2)",
+                        "ENCLOSURE(M1",
+                        "OPPOSITE",
+                        "CO",
+                        "<0.02"
+                    ]
+                },
+                {
+                    "WIDTH": [
+                        "<0.05",
+                        "=90",
+                        "ABUT",
+                        "X"
+                    ]
+                },
+                {
+                    "ENCLOSURE": [
+                        "VIA1",
+                        "<0.001",
+                        "M1",
+                        "ABUT",
+                        "OUTSIDE_IS_ERROR",
+                        "SINGULAR",
+                        "OVERLAPPING"
+                    ]
+                }
+            ]
+        },
+        "VIA1.ENCLOSE.2": {
+            "level": 1,
+            "attributes": [
+                " minDualExtension",
+                "M1",
+                "VIA1",
+                "(0.005 0.03)",
+                "(",
+                ")",
+                "Enclosure of METAL1 end-of-line beyond VIA1 is 0.05",
+                ""
+            ],
+            "children": [
+                {
+                    "X": [
+                        "VIA1",
+                        "EDGE_OUTPUT2)",
+                        "ENCLOSURE(M1",
+                        "OPPOSITE",
+                        "<0.03"
+                    ]
+                },
+                {
+                    "WIDTH": [
+                        "=90",
+                        "<0.056",
+                        "X",
+                        "ABUT"
+                    ]
+                }
+            ]
+        },
+        "METAL2.ENCLOSE.1": {
+            "level": 1,
+            "attributes": [
+                "",
+                "Enclosure of METAL2 beyond VIA1 is 0.005",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "VIA1",
+                        "M2",
+                        "<0.005",
+                        "ABUT",
+                        "OUTSIDE_IS_ERROR",
+                        "SINGULAR",
+                        "OVERLAPPING"
+                    ]
+                }
+            ]
+        },
+        "METAL2.ENCLOSE.2": {
+            "level": 1,
+            "attributes": [
+                " minDualExtension",
+                "M2",
+                "VIA1",
+                "(0.005 0.03)",
+                "(",
+                ")",
+                "Enclosure of METAL2 end-of-line beyond VIA1 is 0.05",
+                ""
+            ],
+            "children": [
+                {
+                    "X": [
+                        "VIA1",
+                        "EDGE_OUTPUT2)",
+                        "ENCLOSURE(M2",
+                        "OPPOSITE",
+                        "<0.03"
+                    ]
+                },
+                {
+                    "WIDTH": [
+                        "=90",
+                        "<0.056",
+                        "X",
+                        "ABUT"
+                    ]
+                }
+            ]
+        },
+        "VIA2.ENCLOSE.1": {
+            "level": 1,
+            "attributes": [
+                "",
+                "Enclosure of METAL2 beyond VIA2 is 0.03",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "M2",
+                        "ABUT",
+                        "VIA2",
+                        "OUTSIDE_IS_ERROR",
+                        "SINGULAR",
+                        "OVERLAPPING",
+                        "<0.03"
+                    ]
+                }
+            ]
+        },
+        "VIA2.ENCLOSE.2": {
+            "level": 1,
+            "attributes": [
+                " minDualExtension",
+                "M2",
+                "VIA2",
+                "(0.005 0.03)",
+                "(",
+                ")",
+                "Enclosure of METAL2 end-of-line beyond VIA2 is 0.10",
+                ""
+            ],
+            "children": [
+                {
+                    "X": [
+                        "EDGE_OUTPUT2)",
+                        "VIA2",
+                        "ENCLOSURE(M2",
+                        "OPPOSITE",
+                        "<0.03"
+                    ]
+                },
+                {
+                    "WIDTH": [
+                        "=90",
+                        "<0.056",
+                        "X",
+                        "ABUT"
+                    ]
+                }
+            ]
+        },
+        "METAL3.ENCLOSE.1": {
+            "level": 1,
+            "attributes": [
+                "",
+                "Enclosure of METAL3 beyond VIA2 is 0.03",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "ABUT",
+                        "VIA2",
+                        "OUTSIDE_IS_ERROR",
+                        "M3",
+                        "SINGULAR",
+                        "OVERLAPPING",
+                        "<0.03"
+                    ]
+                }
+            ]
+        },
+        "METAL3.ENCLOSE.2": {
+            "level": 1,
+            "attributes": [
+                " minDualExtension",
+                "M3",
+                "VIA2",
+                "(0.005 0.03)",
+                "(",
+                ")",
+                "Enclosure of METAL3 end-of-line beyond VIA2 is 0.10",
+                ""
+            ],
+            "children": [
+                {
+                    "X": [
+                        "EDGE_OUTPUT2)",
+                        "VIA2",
+                        "ENCLOSURE(M3",
+                        "OPPOSITE",
+                        "<0.03"
+                    ]
+                },
+                {
+                    "WIDTH": [
+                        "=90",
+                        "<0.056",
+                        "X",
+                        "ABUT"
+                    ]
+                }
+            ]
+        },
+        "VIA3.ENCLOSE.1": {
+            "level": 1,
+            "attributes": [
+                "",
+                "Enclosure of METAL3 beyond VIA3 is 0.03",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "VIA3",
+                        "ABUT",
+                        "OUTSIDE_IS_ERROR",
+                        "M3",
+                        "SINGULAR",
+                        "OVERLAPPING",
+                        "<0.03"
+                    ]
+                }
+            ]
+        },
+        "VIA3.ENCLOSE.2": {
+            "level": 1,
+            "attributes": [
+                " minDualExtension",
+                "M3",
+                "VIA3",
+                "(0.005 0.03)",
+                "(",
+                ")",
+                "Enclosure of METAL3 end-of-line beyond VIA3 is 0.10",
+                ""
+            ],
+            "children": [
+                {
+                    "X": [
+                        "VIA3",
+                        "EDGE_OUTPUT2)",
+                        "ENCLOSURE(M3",
+                        "OPPOSITE",
+                        "<0.03"
+                    ]
+                },
+                {
+                    "WIDTH": [
+                        "=90",
+                        "<0.056",
+                        "X",
+                        "ABUT"
+                    ]
+                }
+            ]
+        },
+        "METAL4.ENCLOSE.1": {
+            "level": 1,
+            "attributes": [
+                "",
+                "Enclosure of METAL4 beyond VIA3 is 0.03",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "M4",
+                        "VIA3",
+                        "ABUT",
+                        "OUTSIDE_IS_ERROR",
+                        "SINGULAR",
+                        "OVERLAPPING",
+                        "<0.03"
+                    ]
+                }
+            ]
+        },
+        "METAL4.ENCLOSE.2": {
+            "level": 1,
+            "attributes": [
+                " minDualExtension",
+                "M4",
+                "VIA3",
+                "(0.005 0.03)",
+                "(",
+                ")",
+                "Enclosure of METAL4 end-of-line beyond VIA3 is 0.10",
+                ""
+            ],
+            "children": [
+                {
+                    "X": [
+                        "ENCLOSURE(M4",
+                        "EDGE_OUTPUT2)",
+                        "VIA3",
+                        "OPPOSITE",
+                        "<0.03"
+                    ]
+                },
+                {
+                    "WIDTH": [
+                        "=90",
+                        "<0.056",
+                        "X",
+                        "ABUT"
+                    ]
+                }
+            ]
+        },
+        "VIA4.ENCLOSE.1": {
+            "level": 1,
+            "attributes": [
+                "",
+                "Enclosure of METAL4 beyond VIA4 is 0.03",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "SINGULAR",
+                        "M4",
+                        "ABUT",
+                        "OUTSIDE_IS_ERROR",
+                        "VIA4",
+                        "OVERLAPPING",
+                        "<0.03"
+                    ]
+                }
+            ]
+        },
+        "VIA4.ENCLOSE.2": {
+            "level": 1,
+            "attributes": [
+                " minDualExtension",
+                "M4",
+                "VIA4",
+                "(0.005 0.03)",
+                "(",
+                ")",
+                "Enclosure of METAL4 end-of-line beyond VIA4 is 0.10",
+                ""
+            ],
+            "children": [
+                {
+                    "X": [
+                        "ENCLOSURE(M4",
+                        "EDGE_OUTPUT2)",
+                        "OPPOSITE",
+                        "VIA4",
+                        "<0.03"
+                    ]
+                },
+                {
+                    "WIDTH": [
+                        "=90",
+                        "<0.056",
+                        "X",
+                        "ABUT"
+                    ]
+                }
+            ]
+        },
+        "METAL5.ENCLOSE.1": {
+            "level": 1,
+            "attributes": [
+                "",
+                "Enclosure of METAL5 beyond VIA4 is 0.03",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "SINGULAR",
+                        "ABUT",
+                        "OUTSIDE_IS_ERROR",
+                        "M5",
+                        "VIA4",
+                        "OVERLAPPING",
+                        "<0.03"
+                    ]
+                }
+            ]
+        },
+        "METAL5.ENCLOSE.2": {
+            "level": 1,
+            "attributes": [
+                " minDualExtension",
+                "M5",
+                "VIA4",
+                "(0.005 0.03)",
+                "(",
+                ")",
+                "Enclosure of METAL5 end-of-line beyond VIA4 is 0.10",
+                ""
+            ],
+            "children": [
+                {
+                    "X": [
+                        "EDGE_OUTPUT2)",
+                        "OPPOSITE",
+                        "ENCLOSURE(M5",
+                        "VIA4",
+                        "<0.03"
+                    ]
+                },
+                {
+                    "WIDTH": [
+                        "=90",
+                        "<0.056",
+                        "X",
+                        "ABUT"
+                    ]
+                }
+            ]
+        },
+        "VIA5.ENCLOSE.1": {
+            "level": 1,
+            "attributes": [
+                "",
+                "Enclosure of METAL5 beyond VIA5 is 0.03",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "VIA5",
+                        "ABUT",
+                        "OUTSIDE_IS_ERROR",
+                        "M5",
+                        "SINGULAR",
+                        "OVERLAPPING",
+                        "<0.03"
+                    ]
+                }
+            ]
+        },
+        "VIA5.ENCLOSE.2": {
+            "level": 1,
+            "attributes": [
+                " minDualExtension",
+                "M5",
+                "VIA5",
+                "(0.005 0.03)",
+                "(",
+                ")",
+                "Enclosure of METAL5 end-of-line beyond VIA5 is 0.10",
+                ""
+            ],
+            "children": [
+                {
+                    "X": [
+                        "VIA5",
+                        "EDGE_OUTPUT2)",
+                        "OPPOSITE",
+                        "ENCLOSURE(M5",
+                        "<0.03"
+                    ]
+                },
+                {
+                    "WIDTH": [
+                        "=90",
+                        "<0.056",
+                        "X",
+                        "ABUT"
+                    ]
+                }
+            ]
+        },
+        "METAL6.ENCLOSE.1": {
+            "level": 1,
+            "attributes": [
+                "",
+                "Enclosure of METAL6 beyond VIA5 is 0.03",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "M6",
+                        "VIA5",
+                        "ABUT",
+                        "OUTSIDE_IS_ERROR",
+                        "SINGULAR",
+                        "OVERLAPPING",
+                        "<0.03"
+                    ]
+                }
+            ]
+        },
+        "METAL6.ENCLOSE.2": {
+            "level": 1,
+            "attributes": [
+                " minDualExtension",
+                "M6",
+                "VIA5",
+                "(0.005 0.03)",
+                "(",
+                ")",
+                "Enclosure of METAL6 end-of-line beyond VIA5 is 0.10",
+                ""
+            ],
+            "children": [
+                {
+                    "X": [
+                        "ENCLOSURE(M6",
+                        "VIA5",
+                        "EDGE_OUTPUT2)",
+                        "OPPOSITE",
+                        "<0.03"
+                    ]
+                },
+                {
+                    "WIDTH": [
+                        "=90",
+                        "<0.056",
+                        "X",
+                        "ABUT"
+                    ]
+                }
+            ]
+        },
+        "VIA6.ENCLOSE.1": {
+            "level": 1,
+            "attributes": [
+                "",
+                "Enclosure of METAL6 beyond VIA6 is 0.03",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "M6",
+                        "ABUT",
+                        "OUTSIDE_IS_ERROR",
+                        "VIA6",
+                        "SINGULAR",
+                        "OVERLAPPING",
+                        "<0.03"
+                    ]
+                }
+            ]
+        },
+        "VIA6.ENCLOSE.2": {
+            "level": 1,
+            "attributes": [
+                " minDualExtension",
+                "M6",
+                "VIA6",
+                "(0.005 0.03)",
+                "(",
+                ")",
+                "Enclosure of METAL6 end-of-line beyond VIA6 is 0.10",
+                ""
+            ],
+            "children": [
+                {
+                    "X": [
+                        "ENCLOSURE(M6",
+                        "EDGE_OUTPUT2)",
+                        "OPPOSITE",
+                        "VIA6",
+                        "<0.03"
+                    ]
+                },
+                {
+                    "WIDTH": [
+                        "=90",
+                        "<0.056",
+                        "X",
+                        "ABUT"
+                    ]
+                }
+            ]
+        },
+        "METAL7.ENCLOSE": {
+            "level": 1,
+            "attributes": [
+                " minExtension",
+                "M7",
+                "VIA6",
+                "0.03",
+                "Enclosure of METAL7 beyond VIA6 is 0.10",
+                ""
+            ],
+            "children": [
+                {
+                    "ENCLOSURE": [
+                        "M7",
+                        "ABUT",
+                        "OUTSIDE_IS_ERROR",
+                        "VIA6",
+                        "SINGULAR",
+                        "OVERLAPPING",
+                        "<0.03"
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -16,7 +16,7 @@ def process_nested_value(nested_value, level):
             attribute_pattern = r'(\w+\(.*\))'
             nested_attribute = re.findall(attribute_pattern, element)
             if nested_attribute:
-                final_dict['children'].append(transform_to_json(f"{nested_attribute}", level + 1))
+                final_dict['children'].append(transform_to_json(f"{nested_attribute[0]}", level + 1))
             else:
                 final_dict['attributes'].append(element)
     return final_dict
@@ -29,7 +29,7 @@ def transform_to_json(s, level=1):
     for match in matches:
         key, value_str = match
         nested_match = re.findall(
-            r'(\s\S+)\(([\s\S]+?\"\s+)\)', value_str
+            r'(\S+)\(([\s\S]+?\"\s+)\)', value_str
         )
         if nested_match:
             final_dict[key] = {
@@ -53,11 +53,8 @@ for rule in rules[0].split("\n"):
     final_rules.append(rule)
 
 ordered_spacing_rules = '\n'.join(final_rules)
-#print(ordered_spacing_rules)
 
 # Transform the input string to JSON
 json_result = transform_to_json(ordered_spacing_rules)
-print(json_result)
-
 with open('reglas.json', 'w') as json_file:
     json.dump(json_result, json_file, indent=4)
