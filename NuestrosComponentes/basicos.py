@@ -58,11 +58,32 @@ class MyNotGate(DloGen):
         self.endcap = self.tech.getPhysicalRule('minClearance', self.gateLayer, self.diffLayer)
     
     def genLayout(self):
-        # first construct the rectangle for the gate
         gateBox = Box(-self.endcap, 0, (self.width + self.endcap), self.length)
-        #### UNCOMMENT FOLLOWING FOUR LINES TO REMOVE MINIMUM AREA DRC ERROR
-        if self.tech.physicalRuleExists('minArea', self.gateLayer):
-            minArea = self.tech.getPhysicalRule('minArea', self.gateLayer)
-            grid = Grid(self.tech.getGridResolution())
+        grid = Grid(self.tech.getGridResolution())
+        if self.tech.physicalRuleExists('minWidth', self.metalLayer):
+            minWidth = self.tech.getPhysicalRule('minWidth', self.metalLayer)
+            gateBox.expandForMinWidth(EAST, minWidth, grid)
+        if self.tech.physicalRuleExists('minArea', self.metalLayer):
+            minArea = self.tech.getPhysicalRule('minArea', self.metalLayer)
             gateBox.expandForMinArea(NORTH, minArea, grid)
-        gateRect = Rect(self.gateLayer, gateBox)
+        gateRect = Rect(self.metalLayer, gateBox)
+        gateRect.fgAddEnclosingPolygon(Layer('NIMP'), filter=ShapeFilter(self.metalLayer))
+
+
+        # # first construct the rectangle for the gate
+        # gateBox = Box(-self.endcap, 0, (self.width + self.endcap), self.length)
+        # #### UNCOMMENT FOLLOWING FOUR LINES TO REMOVE MINIMUM AREA DRC ERROR
+        # if self.tech.physicalRuleExists('minArea', self.gateLayer):
+        #     minArea = self.tech.getPhysicalRule('minArea', self.gateLayer)
+        #     grid = Grid(self.tech.getGridResolution())
+        #     gateBox.expandForMinArea(EAST, minArea, grid)
+        # gateRect = Rect(self.gateLayer, gateBox)
+
+        # # first construct the rectangle for the gate
+        # gateBox1 = Box(-self.endcap, 0, (self.width + self.endcap), self.length)
+        # #### UNCOMMENT FOLLOWING FOUR LINES TO REMOVE MINIMUM AREA DRC ERROR
+        # if self.tech.physicalRuleExists('minArea', self.diffLayer):
+        #     minArea1 = self.tech.getPhysicalRule('minArea', self.diffLayer)
+        #     grid1 = Grid(self.tech.getGridResolution())
+        #     gateBox1.expandForMinArea(NORTH, minArea1, grid1)
+        # gateRect1 = Rect(self.diffLayer, gateBox1)
