@@ -58,32 +58,51 @@ class MyNotGate(DloGen):
         self.endcap = self.tech.getPhysicalRule('minClearance', self.gateLayer, self.diffLayer)
     
     def genLayout(self):
-        gateBox = Box(-self.endcap, 0, (self.width + self.endcap), self.length)
+        ## P-Transistor Logic
+        cntBox = Box(-self.endcap, 0, (self.width + self.endcap), self.length)
         grid = Grid(self.tech.getGridResolution())
+        if self.tech.physicalRuleExists('minWidth', self.diffLayer):
+            minWidth = self.tech.getPhysicalRule('minWidth', self.diffLayer)
+            cntBox.expandForMinWidth(EAST, minWidth, grid)
+            print('minWidth diff '+str(minWidth))
+
+        if self.tech.physicalRuleExists('minArea', self.diffLayer):
+            minArea = self.tech.getPhysicalRule('minArea', self.diffLayer)
+            cntBox.expandForMinArea(NORTH, minArea, grid)
+            print('minArea diff '+str(minArea))
+        
+        p_transistor = Rect(self.diffLayer, cntBox)
+        p_transistor_imp = p_transistor.fgAddEnclosingPolygon(Layer('PIMP'), filter=ShapeFilter())
+
+        ## VDD Logic
+        cntBox = Box(-self.endcap, 0, (self.width + self.endcap), self.length)
+        grid = Grid(self.tech.getGridResolution())
+        if self.tech.physicalRuleExists('minWidth', self.diffLayer):
+            minWidth = self.tech.getPhysicalRule('minWidth', self.diffLayer)
+            cntBox.expandForMinWidth(EAST, minWidth, grid)
+            print('minWidth diff '+str(minWidth))
+
+        if self.tech.physicalRuleExists('minArea', self.diffLayer):
+            minArea = self.tech.getPhysicalRule('minArea', self.diffLayer)
+            cntBox.expandForMinArea(NORTH, minArea, grid)
+            print('minArea diff '+str(minArea))
+
         if self.tech.physicalRuleExists('minWidth', self.metalLayer):
             minWidth = self.tech.getPhysicalRule('minWidth', self.metalLayer)
-            gateBox.expandForMinWidth(EAST, minWidth, grid)
-        if self.tech.physicalRuleExists('minArea', self.metalLayer):
-            minArea = self.tech.getPhysicalRule('minArea', self.metalLayer)
-            gateBox.expandForMinArea(NORTH, minArea, grid)
-        gateRect = Rect(self.metalLayer, gateBox)
-        gateRect.fgAddEnclosingPolygon(Layer('NIMP'), filter=ShapeFilter(self.metalLayer))
+            cntBox.expandForMinWidth(EAST, minWidth, grid)
+            print('minWidth metal '+str(minWidth))
 
+        if True: #self.tech.physicalRuleExists('minArea', self.metalLayer):
+            minArea = 0.02 #self.tech.getPhysicalRule('minArea', self.metalLayer)
+            cntBox.expandForMinArea(NORTH, minArea, grid)
+            print('minArea metal '+str(minArea))
 
-        # # first construct the rectangle for the gate
-        # gateBox = Box(-self.endcap, 0, (self.width + self.endcap), self.length)
-        # #### UNCOMMENT FOLLOWING FOUR LINES TO REMOVE MINIMUM AREA DRC ERROR
-        # if self.tech.physicalRuleExists('minArea', self.gateLayer):
-        #     minArea = self.tech.getPhysicalRule('minArea', self.gateLayer)
-        #     grid = Grid(self.tech.getGridResolution())
-        #     gateBox.expandForMinArea(EAST, minArea, grid)
-        # gateRect = Rect(self.gateLayer, gateBox)
-
-        # # first construct the rectangle for the gate
-        # gateBox1 = Box(-self.endcap, 0, (self.width + self.endcap), self.length)
-        # #### UNCOMMENT FOLLOWING FOUR LINES TO REMOVE MINIMUM AREA DRC ERROR
-        # if self.tech.physicalRuleExists('minArea', self.diffLayer):
-        #     minArea1 = self.tech.getPhysicalRule('minArea', self.diffLayer)
-        #     grid1 = Grid(self.tech.getGridResolution())
-        #     gateBox1.expandForMinArea(NORTH, minArea1, grid1)
-        # gateRect1 = Rect(self.diffLayer, gateBox1)
+        # extra = Rect(self.metalLayer, cntBox)
+        
+        # create contacts
+        self.sourceContact = DeviceContact(self.diffLayer, self.metalLayer, cntBox, name = 'VDD')
+        sourceBox = self.sourceContact.getRect1().getBBox()
+        self.sourceContact.stretch(self.metalLayer, sourceBox)
+        temp = fgPlace(self.sourceContact, NORTH, p_transistor_imp, options = {'infiniteLayers' : [Layer('PIMP'), Layer('NWELL')]})
+        
+        temp.fgAddEnclosingPolygon(Layer('NIMP'), filter=ShapeFilter())

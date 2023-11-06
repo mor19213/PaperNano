@@ -59,7 +59,7 @@ class MyTransistorUnit(DloGen):
         # now create contacts for the source and drain
         self.sourceContact = DeviceContact(self.diffLayer, self.metalLayer, gateBox, name = 'S')
         self.drainContact = DeviceContact(self.diffLayer, self.metalLayer, gateBox, name = 'D')
-        # stretch source and drain contacts to full transistor extent
+        # stretch source and drain contacts to full transistor extent 
         sourceBox = self.sourceContact.getRect1().getBBox()
         self.sourceContact.stretch(self.metalLayer, sourceBox)
         drainBox = self.drainContact.getRect1().getBBox()
